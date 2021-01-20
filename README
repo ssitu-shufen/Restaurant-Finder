@@ -67,6 +67,3 @@ Notes and Assumptions:
 The program uses the dijkstra algorithm and binary heap to find the shortest path from the start vertex to the end vertex. 
 
 All files in the client and server directory are adapted from the Starting Files for Part 2 and Serial Port Communications Within C++ folders provided in eclass. The disjkstra.cpp and part of server.cpp were adapted from the Part 1 Solution provided in eclass.
-
-Modifications to the client.cpp:
-We added a status message "status_message("Receiving Path...");" in the int main() function after "end = get_cursor_lonlat()".
