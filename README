@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////
+// Names : Shufen Situ & Nicholas Rebstock  	          //
+// CMPUT 275, Winter 2020                                 //
+// Assignment 2 part 2 README                   	  //
+// Collaboration level: Full				  //
+// Source: The part 1 solution from eclass                //
+////////////////////////////////////////////////////////////
+
+Included Files: 
+Files in the server directory:
+	server.cpp
+	serialport.cpp
+	serialport.h
+	heap.h
+	dijkstra.cpp
+	dijkstra.h
+	digraph.cpp
+	digraph.h
+	the Makefile
+	README
+	server
+	server.o
+	dijkstra.o
+	digraph.o
+	serialport.o
+	wdigraph.h
+	edmonton-roads-2.0.1.txt
+Files in the client directory:
+	client.cpp
+	consts_and_types.h
+	draw_route.cpp
+	draw_route.h
+	instructions.txt
+	lcd_image.cpp
+	lcd_image.h
+	Makefile
+	map_drawing.cpp
+	serial_handling.cpp
+	serial_handling.h
+
+Accessories:
+	Arduino
+	Joystick
+	Wires
+	Breadboard
+	Pushbuttons
+	TFT Display
+
+Wiring instructions: 
+Mount the TFT display on the Arduino;
+Joystick:
+VRx <--> A8
+VRy <--> A9
+SW  <--> Digital Pin 53
+GND <--> GND
++5V <--> 5V
+
+Pushbuttons:
+Zoom Out Button <--> Digital Pin 47
+Zoom In Button  <--> Digital Pin 45
+
+
+Running Instructions:
+In the client directory, use the command "make" and then "make upload" to compile the client code. In the server directory, use "make" to compile the files in this directory and "./server" to display the output. Use the joystick to move the cursor around and select two points on the map, the function draw_route() will display the shortest route. No path will be drawn if there is 0 or over 500 waypoints between the two selected points.
+
+Notes and Assumptions:
+The program uses the dijkstra algorithm and binary heap to find the shortest path from the start vertex to the end vertex. 
+
+All files in the client and server directory are adapted from the Starting Files for Part 2 and Serial Port Communications Within C++ folders provided in eclass. The disjkstra.cpp and part of server.cpp were adapted from the Part 1 Solution provided in eclass.
+
+Modifications to the client.cpp:
+We added a status message "status_message("Receiving Path...");" in the int main() function after "end = get_cursor_lonlat()".
