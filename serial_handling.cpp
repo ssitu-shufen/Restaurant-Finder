@@ -1,6 +1,5 @@
 ////////////////////////////////////////////////////////////
 // Names : Shufen Situ & Nicholas Rebstock                //
-// IDs: 1571076 & 1602910                                 //
 // CMPUT 275, Winter 2020                                 //
 // Assignment 2 part 2 serial_handling.cpp                //
 // Collaboration level: Full                              //
