@@ -6,7 +6,6 @@
 #include "draw_route.h"
 #include "serial_handling.h"
 
-// The variables to be shared across the project, they are declared here!
 // The type shared_vars is a struct declared in consts_and_types.h
 shared_vars shared;
 
@@ -179,8 +178,7 @@ int main() {
       draw_map();
       draw_cursor();
 
-      // TODO: currently does nothing, your job is to implement it so
-      // that if there is a path, then you will draw the line
+      // if there is a path, draw the line
       // segments connecting these waypoints together
       draw_route();
     }
