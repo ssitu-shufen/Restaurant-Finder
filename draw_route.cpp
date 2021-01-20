@@ -1,10 +1,9 @@
 ////////////////////////////////////////////////////////////
 // Names : Shufen Situ & Nicholas Rebstock  	          //
-// IDs: 1571076 & 1602910                                 //
 // CMPUT 275, Winter 2020                                 //
-// Assignment 2 part 2 draw_route.cpp             	      //
-// Collaboration level: Full				              //
-// Source: none							                  //
+// Assignment 2 part 2 draw_route.cpp             	  //
+// Collaboration level: Full	                          //
+// Source: none						  //
 ////////////////////////////////////////////////////////////
 #include "draw_route.h"
 #include "map_drawing.h"
