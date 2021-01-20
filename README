@@ -57,9 +57,10 @@ Zoom In Button  <--> Digital Pin 45
 
 
 Running Instructions:
-In the client directory, use the command "make" and then "make upload" to compile the client code. In the server directory, use "make" to compile the files in this directory and "./server" to display the output. Use the joystick to move the cursor around and select two points on the map, the function draw_route() will display the shortest route. No path will be drawn if there is 0 or over 500 waypoints between the two selected points.
+In the client directory, use the command "make" and then "make upload" to compile the client code. In the server directory, use "make" to compile the files in this directory and "./server" to display the output. 
+When you use the joystick to move the cursor around and select two points on the map, the function draw_route() will display the shortest route. No path will be drawn if there is 0 or over 500 waypoints between the two selected points.
 
 Notes and Assumptions:
 The program uses the dijkstra algorithm and binary heap to find the shortest path from the start vertex to the end vertex. 
 
-All files in the client and server directory are adapted from the Starting Files for Part 2 and Serial Port Communications Within C++ folders provided in eclass.
+All files in the client and server directory are adapted from the Starting Files for Part 2 and Serial Port Communications within the C++ folders provided in eclass.
