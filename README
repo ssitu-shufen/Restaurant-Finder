@@ -19,10 +19,6 @@ Files in the server directory:
 	the Makefile
 	README
 	server
-	server.o
-	dijkstra.o
-	digraph.o
-	serialport.o
 	wdigraph.h
 	edmonton-roads-2.0.1.txt
 Files in the client directory:
