@@ -2,7 +2,6 @@
 // Names : Shufen Situ & Nicholas Rebstock                //
 // CMPUT 275, Winter 2020                                 //
 // Assignment 2 part 2 server.cpp                         //
-// Collaboration level: Full                              //
 // Source: The part 1 solution from eclass                //
 ////////////////////////////////////////////////////////////
 #include <iostream>
