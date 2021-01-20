@@ -19,8 +19,6 @@ uint8_t get_waypoints(const lon_lat_32& start, const lon_lat_32& end) {
         start: starting point;
         end: ending point;
     Returns: 1 if it is successful.
-
-    Note: implementing the timeout causes strange errors in, and thus it is commented out.
     */
     Serial.print("R ");
     Serial.print(start.lat);
@@ -36,10 +34,8 @@ uint8_t get_waypoints(const lon_lat_32& start, const lon_lat_32& end) {
     int count = 1;
     String line;
     String command;
-    // int timeoutTime = millis() + 10000;
     while (true) {
         
-        // if (millis() > timeoutTime) {return 0;}
         while (Serial.available()) {
             line = Serial.readString();
             Serial.setTimeout(10);
@@ -61,7 +57,6 @@ uint8_t get_waypoints(const lon_lat_32& start, const lon_lat_32& end) {
                 Serial.println('A');
                 continue;
             } else if (command == "W") {
-                // timeoutTime = millis() + 1000;
                 Serial.print("Client got: ");
                 Serial.println(line);
                 Serial.println('A');
@@ -92,8 +87,6 @@ uint8_t get_waypoints(const lon_lat_32& start, const lon_lat_32& end) {
         }
     }
 
-    // 1 indicates a successful exchange, of course you should only output 1
-    // in your final solution if the exchange was indeed successful
-    // (otherwise, return 0 if the communication failed)
+    // 1 indicates a successful exchange, otherwise, return 0 if the communication failed.
     return 1;
 }
