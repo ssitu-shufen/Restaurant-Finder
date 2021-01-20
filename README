@@ -63,4 +63,4 @@ When you use the joystick to move the cursor around and select two points on the
 Notes and Assumptions:
 The program uses the dijkstra algorithm and binary heap to find the shortest path from the start vertex to the end vertex. 
 
-All files in the client and server directory are adapted from the Starting Files for Part 2 and Serial Port Communications within the C++ folders provided in eclass.
+All files in the client and server directory are adapted from the Starting Files for Part 2 and Serial Port Communications folders provided in eclass.
